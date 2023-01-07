@@ -24,18 +24,17 @@ public class BlockBreakGame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
-
         layout = new CardLayout();
         frame.setLayout(layout);
+    }
 
+    public void init() {
         titlePanel = new TitlePanel();
         frame.add(titlePanel, "Title");
 
         gamePanel = new GamePanel();
         frame.add(gamePanel, "Game");
-    }
 
-    public void init() {
         layout.show(this.frame.getContentPane(), "Title");
         titlePanel.requestFocus();
 
