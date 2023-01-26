@@ -1,12 +1,17 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group 'jp.s-site.main'
+group 'io.ren778.github'
 version '1.0'
 
 repositories {
     mavenCentral()
+}
+
+application {
+    mainClassName = "io.ren778.github.BlockBreakGame"
 }
 
 dependencies {

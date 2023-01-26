@@ -1,4 +1,4 @@
-package jp.ssite.main.blockbreakgame;
+package io.ren778.github;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -61,6 +61,11 @@ class TitlePanel extends JPanel {
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
         titleLabel.setBorder(BlockBreakGame.Class.border);
         this.add(titleLabel);
+
+        JButton playButton = new JButton("Play!");
+        playButton.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 30));
+        playButton.setBounds(0,0, 100, 50);
+        this.add(playButton);
     }
 
     public void Update() {
